@@ -1,0 +1,197 @@
+// Include defaults overrides and other variables here
+
+// Color overrides
+$primary: #5d328c;
+$yellow: #FFFF01;
+$success: #2AE2A2;
+$light: #FAF5FC;
+$dark-primary: #22182c;
+
+// $colors: (
+//     "yellow": $yellow
+// );
+
+// Spacers overrides
+$spacer: 16px;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 2,
+    6: $spacer * 2.25,
+    7: $spacer * 2.5
+);
+
+// Buttons overrides
+$btn-border-radius: 4px;
+$btn-font-size: 18px;
+$btn-padding-y: $spacer;
+$btn-padding-x: $spacer * 2;
+$btn-line-height: 19.8px;
+$btn-font-weight: 500px;
+
+// Card Overrides
+$card-border-radius: 4px;
+$card-border-color: #F4E9FF;
+$card-border-width: 1px;
+$card-bg: #FFF;
+$card-title-color: $primary;
+
+
+//Typography
+$headings-color: $primary;
+$h1-font-size: 88px;
+$headings-font-weight: 600;
+
+$font-sizes: (
+  1: 24px,
+  2: 18px,
+);
+
+
+// Import bootstrap
+@import "./bootstrap5/scss/bootstrap";
+
+// Custom styling codes below
+
+h5 {
+font-size: 32px;
+font-weight: 600;
+line-height: 35px;
+letter-spacing: -0.02em;
+text-align: left;
+}
+
+#hero-text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+#video-section-row{
+    background-image: url("../../../uploads/2023/08/Untitled-design-2.png");
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: contain, cover;
+}
+
+
+// Custom Styling
+.main-navigation {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.4px;
+    letter-spacing: -0.36px;
+    text-transform: capitalize;
+
+    a {
+        color: var(--bs-primary);
+        padding: 0px 16px;
+        transition: color 0.5s ease;
+
+
+        &:hover {
+            color: darken($primary, 50%);
+        }
+    }
+}
+
+.card-footer {
+    background-color: white;
+    border: none;
+
+    a{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.card-title {
+    min-height: 100px;
+}
+
+.btn-primary {
+    color: var(--bs-yellow) !important;
+
+    &:hover {
+        color: darken($yellow, 10%);
+    }
+}
+
+@media (max-width: 1179px) {
+    .menu-item {
+        padding: 10px;
+    }
+}
+
+ul#primary-menu {
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    max-width: 720px;
+    width: 100%;
+    height: auto;
+}
+
+.hero-heading {
+    font-size: 88px;
+    font-weight: 600;
+    line-height: 97px;
+    letter-spacing: 0em;
+}
+
+.hero-text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+}
+
+
+.btn-outline-secondary {
+    border-color: $primary;
+    color: $primary;
+
+    &:hover {
+        background-color: $primary;
+        color: white;
+        border-color: $primary;
+    }
+}
+
+
+.site-footer {
+    background-color: $dark-primary;
+    color: white;
+
+    #footer-ref {
+        text-decoration: none;
+        color: purple;
+    }
+}
+
+.hero-graphics {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    height: auto;
+}
+
